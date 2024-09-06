@@ -1,0 +1,65 @@
+ 1. Insertion Sort Aşamaları ve Big-O Gösterimi
+Dizi: [22, 27, 16, 2, 18, 6]
+
+Insertion Sort algoritması, diziyi sıralamak için şu şekilde çalışır:
+
+Başlangıç: [22, 27, 16, 2, 18, 6]
+
+İlk eleman olan 22, sıralı alt dizinin ilk elemanıdır.
+İkinci Eleman - 27:
+
+27, 22'den büyüktür, bu yüzden 27 sıralı alt dizinin sonuna eklenir.
+Sonuç: [22, 27, 16, 2, 18, 6]
+Üçüncü Eleman - 16:
+
+16, 27'den küçüktür. 16, 22'nin önüne gelir.
+Sonuç: [16, 22, 27, 2, 18, 6]
+Dördüncü Eleman - 2:
+
+2, sıralı alt dizinin tüm elemanlarından küçüktür. 2, en başa gelir.
+Sonuç: [2, 16, 22, 27, 18, 6]
+Beşinci Eleman - 18:
+
+18, 27'den küçüktür, 22'den büyüktür. Bu nedenle 18, 22'nin önüne yerleştirilir.
+Sonuç: [2, 16, 18, 22, 27, 6]
+Altıncı Eleman - 6:
+
+6, 16'dan küçüktür, 2'nin ardından gelir. 6, 16'nın önüne yerleştirilir.
+Sonuç: [2, 6, 16, 18, 22, 27]
+Big-O Gösterimi:
+
+Worst Case (En Kötü Durum): O(n^2) - Dizi ters sıralıysa.
+Average Case (Ortalama Durum): O(n^2)
+Best Case (En İyi Durum): O(n) - Dizi zaten sıralıysa.
+18 Sayısının Durumu:
+
+Average Case (Ortalama Durum): 18, sıralı dizinin ortasında bulunur.
+Worst Case (En Kötü Durum): 18 dizinin sonunda olamaz.
+Best Case (En İyi Durum): 18 dizinin başında olamaz.
+Bu yüzden, 18 sayısı Average Case kapsamına girer.
+
+2. Selection Sort İlk 4 Adım
+Dizi: [7, 3, 5, 8, 2, 9, 4, 15, 6]
+
+Selection Sort algoritması, her adımda dizideki en küçük elemanı bulur ve sıralı alt dizine ekler.
+
+İlk Adım:
+
+En küçük eleman 2’dir. 2, dizinin ilk elemanı olan 7'nin yerine geçer.
+Sonuç: [2, 3, 5, 8, 7, 9, 4, 15, 6]
+İkinci Adım:
+
+Kalan dizide en küçük eleman 3’tür. 3 zaten doğru yerde.
+Sonuç: [2, 3, 5, 8, 7, 9, 4, 15, 6]
+Üçüncü Adım:
+
+Kalan dizide en küçük eleman 4’tür. 4, dizinin üçüncü elemanı olan 5'in yerine geçer.
+Sonuç: [2, 3, 4, 8, 7, 9, 5, 15, 6]
+Dördüncü Adım:
+
+Kalan dizide en küçük eleman 5’tir. 5 zaten doğru yerde.
+Sonuç: [2, 3, 4, 5, 7, 9, 8, 15, 6]
+Özet:
+
+Insertion Sort aşamaları sıralı bir şekilde elemanları doğru yerlerine yerleştirir. Big-O notasyonu genellikle O(n^2) olup, 18 sayısı Average Case kapsamına girer.
+Selection Sort ilk dört adımda dizinin her bir elemanını sıralı bir şekilde yerleştirir. İlk dört adımda dizinin düzeni yukarıda belirtilmiştir.
